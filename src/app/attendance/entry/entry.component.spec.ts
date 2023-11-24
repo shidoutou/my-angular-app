@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EntryComponent } from './entry.component';
+import { AttendanceEntryComponent } from './entry.component';
 
-describe('EntryComponent', () => {
-  let component: EntryComponent;
-  let fixture: ComponentFixture<EntryComponent>;
+describe('AttendanceEntryComponent', () => {
+  let component: AttendanceEntryComponent;
+  let fixture: ComponentFixture<AttendanceEntryComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [EntryComponent]
+      declarations: [AttendanceEntryComponent]
     });
-    fixture = TestBed.createComponent(EntryComponent);
+    fixture = TestBed.createComponent(AttendanceEntryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
