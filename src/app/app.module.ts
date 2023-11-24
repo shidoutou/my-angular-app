@@ -9,12 +9,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SkillsModule } from './skills/skills.module';
 import { NavbarComponent } from './navbar/navbar.component';
+import { EntryComponent } from './attendance/entry/entry.component';
+import { SearchComponent } from './attendance/search/search.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    EntryComponent,
+    SearchComponent
   ],
   imports: [
     HttpClientModule,
