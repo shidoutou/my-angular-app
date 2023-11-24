@@ -1,0 +1,22 @@
+<p>main works!</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>skillName</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let skill of skills">
+      <td>{{ skill.skillName }}</td>
+      <td>{{ skill.description }}</td>
+      <td>{{ skill.id }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<button (click)="fetchAllSkills()">全检索</button>
+
+
