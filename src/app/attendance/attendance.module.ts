@@ -1,14 +1,13 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EntryComponent } from './entry/entry.component';
-import { SearchComponent } from './search/search.component';
+import { NgModule } from '@angular/core';
+import { AttendanceEntryComponent } from './entry/entry.component';
 
 
 
 @NgModule({
   declarations: [
-    EntryComponent,
-    SearchComponent
+    AttendanceEntryComponent,
+    AttendanceEntryComponent
   ],
   imports: [
     CommonModule

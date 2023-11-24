@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { skills } from 'src/app/skills/api-response.model';
+import { Skills } from 'src/app/skills/api-response.model';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -9,12 +9,12 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./main.component.css']
 })
 
-export class MainComponent {
+export class SkillSMainComponent {
   constructor(private http: HttpClient) { }
-  skills: skills[] = [];
+  skills: Skills[] = [];
   fetchAllSkills() {
     const apiUrl = environment.apiBaseUrl + '/skills';
-    this.http.get<skills[]>(apiUrl).subscribe(response => {
+    this.http.get<Skills[]>(apiUrl).subscribe(response => {
       console.log(response);
       this.skills = response;
     });

@@ -1,5 +1,5 @@
 // api-response.model.ts
-export interface skills {
+export interface Skills {
   id: string;
   skillName: string;
   description: string;
